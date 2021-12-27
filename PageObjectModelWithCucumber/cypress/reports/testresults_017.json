@@ -1,0 +1,150 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 2,
+    "pending": 1,
+    "failures": 0,
+    "start": "2021-07-15T17:40:03.755Z",
+    "end": "2021-07-15T17:40:24.307Z",
+    "duration": 20552,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 33.33333333333333,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "792bf224-f5cd-4a81-887b-2f506eb865cb",
+      "title": "",
+      "fullFile": "cypress/integration/Banking.feature",
+      "file": "cypress/integration/Banking.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "b76ecdbe-1f20-4cc0-86f3-2c93f1c7e3ee",
+          "title": "Bank Manager Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login as Bank Manager",
+              "fullTitle": "Bank Manager Login Login as Bank Manager",
+              "timedOut": null,
+              "duration": 16916,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "fd29c03e-cf4d-4184-83fe-0cc2a43f2a5e",
+              "parentUUID": "b76ecdbe-1f20-4cc0-86f3-2c93f1c7e3ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add a Customer",
+              "fullTitle": "Bank Manager Login Add a Customer",
+              "timedOut": null,
+              "duration": 3438,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "2e6c524b-22a5-4a29-a1f7-300b709c3d00",
+              "parentUUID": "b76ecdbe-1f20-4cc0-86f3-2c93f1c7e3ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Opening Account",
+              "fullTitle": "Bank Manager Login Opening Account",
+              "timedOut": null,
+              "duration": 48,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// register this scenario with the cucumber data collector\n// but don't run it\n// Tell mocha this is a skipped test so it also shows correctly in Cypress\nconst state = window.testState;\ncy.then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() => state.onFinishScenario(scenario))\n  // eslint-disable-next-line func-names\n  .then(function () {\n    return this.skip();\n  });",
+              "err": {
+                "message": "CypressError: sync skip; aborting execution",
+                "estack": "[object Object]\nFrom Your Spec Code:\n    at Context.eval (http://www.way2automation.com/__cypress/tests?p=cypress\\integration\\Banking.feature:11942:10)",
+                "diff": null
+              },
+              "uuid": "bede877b-19e4-42cf-a963-5fe2a68a17dc",
+              "parentUUID": "b76ecdbe-1f20-4cc0-86f3-2c93f1c7e3ee",
+              "isHook": false,
+              "skipped": true
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "fd29c03e-cf4d-4184-83fe-0cc2a43f2a5e",
+            "2e6c524b-22a5-4a29-a1f7-300b709c3d00"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [
+            "bede877b-19e4-42cf-a963-5fe2a68a17dc"
+          ],
+          "duration": 20402,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testresults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

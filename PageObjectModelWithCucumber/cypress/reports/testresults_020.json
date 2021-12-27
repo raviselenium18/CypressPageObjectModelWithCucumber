@@ -1,0 +1,145 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-07-15T18:52:37.201Z",
+    "end": "2021-07-15T18:52:40.865Z",
+    "duration": 3664,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "44900c77-287f-4f33-ab14-74179677a477",
+      "title": "",
+      "fullFile": "cypress/integration/Banking.feature",
+      "file": "cypress/integration/Banking.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "5ef5e9d5-9922-4f11-92b3-e0418528dbf4",
+          "title": "Bank Manager Login",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Login as Bank Manager",
+              "fullTitle": "Bank Manager Login Login as Bank Manager",
+              "timedOut": null,
+              "duration": 2087,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "278893e1-6f7a-444c-8fcb-918816917ca6",
+              "parentUUID": "5ef5e9d5-9922-4f11-92b3-e0418528dbf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Add a Customer",
+              "fullTitle": "Bank Manager Login Add a Customer",
+              "timedOut": null,
+              "duration": 1248,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "431ab2a3-46c5-47d4-9ee0-018dab7e863a",
+              "parentUUID": "5ef5e9d5-9922-4f11-92b3-e0418528dbf4",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Opening Account",
+              "fullTitle": "Bank Manager Login Opening Account",
+              "timedOut": null,
+              "duration": 245,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "4b9c38de-e51c-483b-bf17-8ce21b1cd589",
+              "parentUUID": "5ef5e9d5-9922-4f11-92b3-e0418528dbf4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "278893e1-6f7a-444c-8fcb-918816917ca6",
+            "431ab2a3-46c5-47d4-9ee0-018dab7e863a",
+            "4b9c38de-e51c-483b-bf17-8ce21b1cd589"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 3580,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "testresults",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/reports",
+        "reportFilename": "testresults",
+        "overwrite": false,
+        "html": true,
+        "json": true,
+        "charts": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
